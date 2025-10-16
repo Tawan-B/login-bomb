@@ -62,7 +62,7 @@ const Login = () => {
                   type="text"
                   id="userEmail"
                   name="userEmail"
-                  placeholder="userEmail"
+                  placeholder="Email"
                   required
                 />
               </div>
@@ -75,7 +75,7 @@ const Login = () => {
                   type="password"
                   id="password"
                   name="password"
-                  placeholder="password"
+                  placeholder="Password"
                   required
                 />
               </div>

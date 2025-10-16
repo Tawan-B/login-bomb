@@ -15,40 +15,42 @@ function Home() {
 
     return (
         <div className="home-container">
-            <h1>Main Stage – Power-ups</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th style={{ width: '50px' }}></th> 
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {products.map(product => (
-                        <tr key={product.id}>
-                            <td>
-                                <img 
-                                    src={product.image} 
-                                    alt={product.name} 
-                                    className="product-icon"
-                                />
-                            </td>
-                            <td>{product.id}</td>
-                            <td>{product.name}</td>
-                            <td>R$ {product.price.toFixed(2)}</td>
-                            <td>
-                                <button onClick={() => removeProduct(product.id)}>
-                                    Remove
-                                </button>
-                            </td>
+            <div className="item-container">
+                <h1>Main Stage – Power-ups</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style={{ width: '50px' }}></th> 
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th></th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
+                    </thead>
+                    <tbody>
+                        {products.map(product => (
+                            <tr key={product.id}>
+                                <td>
+                                    <img 
+                                        src={product.image} 
+                                        alt={product.name} 
+                                        className="product-icon"
+                                    />
+                                </td>
+                                <td>{product.id}</td>
+                                <td>{product.name}</td>
+                                <td>R$ {product.price.toFixed(2)}</td>
+                                <td>
+                                    <button onClick={() => removeProduct(product.id)}>
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+                </div>
+            </div>
     );
 }
 

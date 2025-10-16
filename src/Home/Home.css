@@ -1,7 +1,16 @@
 
 .home-container {
+    background-image: url('/background.PNG');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container {
     font-family: 'Arial', sans-serif;
-    padding: 30px;
+    padding: 180px;
     max-width: 900px;
     margin: 40px auto;
     background-color: rgba(0, 0, 0, 0.55); 
@@ -12,7 +21,7 @@
 
 .home-container h1 {
     color: #FFF95D;
-    margin-bottom: 30px;
+    margin-bottom: 180px;
     font-size: 2.2em;
     font-weight: 600;
     text-shadow: 
@@ -24,7 +33,7 @@
 }
 
 .home-container table {
-    width: 100%;
+    width: 100;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #ffffff;
