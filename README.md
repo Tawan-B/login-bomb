@@ -1,5 +1,12 @@
 # React + Vite
 
+Projeto simples para a disciplina de programar em linguagem interpretada
+
+Consiste em uma página de login simples que direciona para uma pagina home com uma listagem de itens.
+
+
+![Captura de tela do projeto](assets/preview.PNG)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
